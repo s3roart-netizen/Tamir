@@ -1,228 +1,211 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.1">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="de"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Handwerker Webseite&lt;/title&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Google Fonts --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Merriweather:wght@700&amp;display=swap"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>rel="stylesheet"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Tailwind laden --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>tailwind.config = {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>theme: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>extend: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>colors: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>brand: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>turquoise: "#D2E8E3",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>primary: "#1f2937",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>secondary: "#9ca3af",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>accent: "#fbbf24",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>fontFamily: {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>sans: ["Inter", "ui-sans-serif", "system-ui"],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>serif: ["Merriweather", "serif"],</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>},</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>};</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Smooth Scroll --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>html { scroll-behavior: smooth; }</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;body class="font-sans bg-brand-turquoise text-brand-primary scroll-smooth"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Hero Section --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section class="px-[5%] py-12 md:py-16 lg:py-20 flex justify-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="relative overflow-hidden rounded-2xl max-w-5xl w-full shadow-lg"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Inhalt --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>class="relative z-10 flex min-h-[28rem] md:min-h-[36rem] flex-col items-center justify-center p-8 md:p-16 text-center"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="w-full max-w-2xl"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h1</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="mb-5 text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>Professionelle Handwerksarbeit für Ihr Zuhause</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;p class="text-white md:text-lg"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>Wir bieten maßgeschneiderte Lösungen für alle Ihre Renovierungs-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>und Reparaturbedürfnisse mit höchster Qualität und Präzision.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-8"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Services Button scrollt zu Leistungen --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>href="#leistungen"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="rounded-full border border-white bg-white text-brand-primary px-6 py-2 md:px-8 md:py-3 font-medium hover:bg-gray-100 transition"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>Services</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Kontakt Button scrollt zu Kontakt --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>href="#kontakt"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="rounded-full border border-white bg-brand-primary text-white px-6 py-2 md:px-8 md:py-3 font-medium hover:bg-black transition"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>Kontakt</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Hintergrundbild + Overlay --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="absolute inset-0 z-0"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;img</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>src="https://i.imgur.com/GdI78bx.jpg"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>alt="Hero Bild"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>class="w-full h-full object-cover"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="absolute inset-0 bg-black/40"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Leistungen --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="leistungen" class="px-[5%] py-16 md:py-24 lg:py-28"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="container mx-auto"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="mb-12 text-center"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="mb-3 font-semibold"&gt;Unsere Leistungen&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h2 class="mb-5 text-3xl md:text-5xl lg:text-6xl font-serif font-bold"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Vielseitige Handwerksdienstleistungen</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="md:text-lg"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Wir decken alle Bereiche der Haus- und Gebäudeinstandhaltung ab.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Renovierung --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="bg-white rounded-xl shadow overflow-hidden"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>src="https://i.imgur.com/3HwcCcN.jpg"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>alt="Renovierung Bild"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="w-full h-48 object-cover"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="p-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Renovierung&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>Komplette Raumgestaltung, Modernisierung von Küchen, Bädern und Wohnbereichen.</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Sanierung --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="bg-white rounded-xl shadow overflow-hidden"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>src="https://i.imgur.com/lwkEfS2.jpg"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>alt="Sanierung Bild"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="w-full h-48 object-cover"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="p-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Sanierung&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;Energetische Verbesserungen und umfassende Gebäudesanierung.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;!-- Reparaturen --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div class="bg-white rounded-xl shadow overflow-hidden"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>src="https://i.imgur.com/g6HQl4a.jpg"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>alt="Reparaturen Bild"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="w-full h-48 object-cover"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="p-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;h3 class="text-xl font-bold mb-2"&gt;Reparaturen&lt;/h3&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;p&gt;Schnelle und zuverlässige Reparaturen im ganzen Haus.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Kontakt --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;section id="kontakt" class="px-[5%] py-16 md:py-24 lg:py-28 bg-white"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div class="container mx-auto grid md:grid-cols-2 gap-12 items-start"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="mb-3 font-semibold"&gt;Kontakt&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;h2 class="mb-5 text-3xl md:text-5xl lg:text-6xl font-serif font-bold"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Kontaktieren Sie uns</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/h2&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;p class="mb-6 md:text-lg"&gt;Wir freuen uns auf Ihre Anfrage!&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;ul class="space-y-3"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>E-Mail:<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;a class="underline hover:no-underline" href="mailto:a.ablay@gmx.de"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>a.ablay@gmx.de</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>Telefon:<span class="Apple-converted-space"> </span></span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;a class="underline hover:no-underline" href="tel:+491775954166"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>+49 177 5954166</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;li&gt;Adresse: Musterstraße 123, 10115 Berlin&lt;/li&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;form class="space-y-6"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="name" class="block mb-2"&gt;Name&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;input</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>id="name"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>type="text"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="w-full border border-brand-secondary rounded-md px-3 py-2"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="email" class="block mb-2"&gt;E-Mail&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;input</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>id="email"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>type="email"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="w-full border border-brand-secondary rounded-md px-3 py-2"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="message" class="block mb-2"&gt;Nachricht&lt;/label&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;textarea</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>id="message"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>rows="5"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="w-full border border-brand-secondary rounded-md px-3 py-2"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&gt;&lt;/textarea&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;button</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>class="rounded-full bg-brand-primary text-white px-6 py-3 font-medium hover:bg-black transition"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>Absenden</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/form&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handwerker Webseite</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind laden -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                turquoise: "#D2E8E3",
+                primary: "#1f2937",
+                secondary: "#9ca3af",
+                accent: "#fbbf24",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "ui-sans-serif", "system-ui"],
+              serif: ["Merriweather", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Smooth Scroll -->
+    <style>
+      html { scroll-behavior: smooth; }
+    </style>
+  </head>
+  <body class="font-sans bg-brand-turquoise text-brand-primary scroll-smooth">
+    
+    <!-- Hero Section -->
+    <section class="px-[5%] py-12 md:py-16 lg:py-20 flex justify-center">
+      <div class="relative overflow-hidden rounded-2xl max-w-5xl w-full shadow-lg">
+        <!-- Inhalt -->
+        <div
+          class="relative z-10 flex min-h-[28rem] md:min-h-[36rem] flex-col items-center justify-center p-8 md:p-16 text-center"
+        >
+          <div class="w-full max-w-2xl">
+            <h1
+              class="mb-5 text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight"
+            >
+              Professionelle Handwerksarbeit für Ihr Zuhause
+            </h1>
+            <p class="text-white md:text-lg">
+              Wir bieten maßgeschneiderte Lösungen für alle Ihre Renovierungs-
+              und Reparaturbedürfnisse mit höchster Qualität und Präzision.
+            </p>
+          </div>
+          <div class="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-8">
+            <!-- Services Button scrollt zu Leistungen -->
+            <a
+              href="#leistungen"
+              class="rounded-full border border-white bg-white text-brand-primary px-6 py-2 md:px-8 md:py-3 font-medium hover:bg-gray-100 transition"
+            >
+              Services
+            </a>
+            <!-- Kontakt Button scrollt zu Kontakt -->
+            <a
+              href="#kontakt"
+              class="rounded-full border border-white bg-brand-primary text-white px-6 py-2 md:px-8 md:py-3 font-medium hover:bg-black transition"
+            >
+              Kontakt
+            </a>
+          </div>
+        </div>
+
+        <!-- Hintergrundbild + Overlay -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://i.imgur.com/GdI78bx.jpg"
+            alt="Hero Bild"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leistungen -->
+    <section id="leistungen" class="px-[5%] py-16 md:py-24 lg:py-28">
+      <div class="container mx-auto">
+        <div class="mb-12 text-center">
+          <p class="mb-3 font-semibold">Unsere Leistungen</p>
+          <h2 class="mb-5 text-3xl md:text-5xl lg:text-6xl font-serif font-bold">
+            Vielseitige Handwerksdienstleistungen
+          </h2>
+          <p class="md:text-lg">
+            Wir decken alle Bereiche der Haus- und Gebäudeinstandhaltung ab.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Renovierung -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="https://i.imgur.com/3HwcCcN.jpg"
+              alt="Renovierung Bild"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Renovierung</h3>
+              <p>
+                Komplette Raumgestaltung, Modernisierung von Küchen, Bädern und Wohnbereichen.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sanierung -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="https://i.imgur.com/lwkEfS2.jpg"
+              alt="Sanierung Bild"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Sanierung</h3>
+              <p>Energetische Verbesserungen und umfassende Gebäudesanierung.</p>
+            </div>
+          </div>
+
+          <!-- Reparaturen -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="https://i.imgur.com/g6HQl4a.jpg"
+              alt="Reparaturen Bild"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Reparaturen</h3>
+              <p>Schnelle und zuverlässige Reparaturen im ganzen Haus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="px-[5%] py-16 md:py-24 lg:py-28 bg-white">
+      <div class="container mx-auto grid md:grid-cols-2 gap-12 items-start">
+        <div>
+          <p class="mb-3 font-semibold">Kontakt</p>
+          <h2 class="mb-5 text-3xl md:text-5xl lg:text-6xl font-serif font-bold">
+            Kontaktieren Sie uns
+          </h2>
+          <p class="mb-6 md:text-lg">Wir freuen uns auf Ihre Anfrage!</p>
+          <ul class="space-y-3">
+            <li>
+              E-Mail: 
+              <a class="underline hover:no-underline" href="mailto:a.ablay@gmx.de">
+                a.ablay@gmx.de
+              </a>
+            </li>
+            <li>
+              Telefon: 
+              <a class="underline hover:no-underline" href="tel:+491775954166">
+                +49 177 5954166
+              </a>
+            </li>
+            <li>Adresse: Musterstraße 123, 10115 Berlin</li>
+          </ul>
+        </div>
+
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block mb-2">Name</label>
+            <input
+              id="name"
+              type="text"
+              class="w-full border border-brand-secondary rounded-md px-3 py-2"
+            />
+          </div>
+          <div>
+            <label for="email" class="block mb-2">E-Mail</label>
+            <input
+              id="email"
+              type="email"
+              class="w-full border border-brand-secondary rounded-md px-3 py-2"
+            />
+          </div>
+          <div>
+            <label for="message" class="block mb-2">Nachricht</label>
+            <textarea
+              id="message"
+              rows="5"
+              class="w-full border border-brand-secondary rounded-md px-3 py-2"
+            ></textarea>
+          </div>
+          <button
+            class="rounded-full bg-brand-primary text-white px-6 py-3 font-medium hover:bg-black transition"
+          >
+            Absenden
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </body>
 </html>
